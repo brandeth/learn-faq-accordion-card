@@ -34,42 +34,26 @@ const faqs: FAQ[] = [
 </script>
 
 <template>
-  <div class="FAQAccordionCard-imageContainer">
-    <div class="WomanAndBox-container">
-      <img
-        srcset="
-          illustration-woman-online-mobile.svg  278w,
-          illustration-woman-online-desktop.svg 472w
-        "
-        sizes="(max-width: 768px) 278px,
-         472px"
-        src="illustration-woman-online-desktop.svg"
-        alt="Woman Online"
-        class="Image-womanOnline"
-      />
-      <img class="Image-box" src="illustration-box-desktop.svg" alt="Box" />
-    </div>
-    <img
-      class="Image-pattern"
-      srcset="bg-pattern-mobile.svg 240w, bg-pattern-desktop.svg 966w"
-      sizes="(max-width: 768px) 240px,
-         966px"
-      src="bg-pattern-mobile.svg"
-      alt="Pattern"
-    />
-  </div>
   <div class="FAQAccordionCard">
     <div class="FAQAccordionCard-container">
+      <div class="FAQAccordionCard-imageContainer">
+        <div class="WomanAndBox-container">
+          <img srcset="
+              illustration-woman-online-mobile.svg  278w,
+              illustration-woman-online-desktop.svg 472w
+            " sizes="(max-width: 768px) 278px,
+             472px" src="illustration-woman-online-desktop.svg" alt="Woman Online" class="Image-womanOnline" />
+          <img class="Image-box" src="illustration-box-desktop.svg" alt="Box" />
+          <img class="Image-pattern" srcset="bg-pattern-mobile.svg 240w, bg-pattern-desktop.svg 966w" sizes="(max-width: 768px) 240px,
+             966px" src="bg-pattern-mobile.svg" alt="Pattern" />
+        </div>
+      </div>
       <div class="FAQAccordionCard-content">
         <div class="FAQAccordionCard-title">
           <h2>FAQ</h2>
         </div>
         <div class="FAQAccordionCard-accordion">
-          <FAQAccordionItem
-            v-for="faq in faqs"
-            :key="faq.question"
-            :faq="faq"
-          />
+          <FAQAccordionItem v-for="faq in faqs" :key="faq.question" :faq="faq" />
         </div>
       </div>
     </div>

@@ -7,13 +7,21 @@ defineProps<{
     answer: string;
   };
 }>();
+
+const isActive = ref(false);
+
+const toggleAccordion = () => {
+  isActive.value = !isActive.value;
+};
 </script>
 
 <template>
-  <div class="FAQAccordionCard-item">
+  <div @click="toggleAccordion" :class="{
+    'is-open': isActive,
+  }" class="FAQAccordionCard-item">
     <div class="FAQAccordionCard-accordionHeader">
       <h3>{{ faq.question }}</h3>
-      <img src="/icon-arrow-down.svg" alt="Arrow Down" />
+      <img class="FAQAccordionCard-icon" src="/icon-arrow-down.svg" alt="Arrow Down" />
     </div>
     <div class="FAQAccordionCard-accordionBody">
       <p>
