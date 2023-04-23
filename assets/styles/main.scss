@@ -134,7 +134,16 @@ h6 {
 
         h3 {
             font-weight: 400;
+            transition: 0.3s ease-in-out;
             color: var(--dark-grayish-blue);
+        }
+    }
+
+    &-accordionHeader:hover {
+        cursor: pointer;
+
+        h3 {
+            color: var(--soft-red);
         }
     }
 
@@ -164,6 +173,7 @@ h6 {
         justify-content: center;
         z-index: 1;
         margin-bottom: 2rem;
+        position: relative;
 
         .Image {
             &-box {
@@ -200,9 +210,9 @@ h6 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                top: -7.5rem;
+                top: -47%;
                 z-index: 2;
-                padding: 0 2rem;
+                // padding: 0 2rem;
             }
         }
     }
@@ -224,6 +234,11 @@ h6 {
 
                 .FAQAccordionCard-icon {
                     transform: rotate(-180deg);
+                }
+            }
+            .FAQAccordionCard-accordionHeader:hover {
+                h3 {
+                    color: var(--soft-red);
                 }
             }
             .FAQAccordionCard-accordionBody {
