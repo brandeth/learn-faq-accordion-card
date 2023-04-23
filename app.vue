@@ -1,3 +1,27 @@
+<script lang="ts" setup>
+useHead({
+  title: "FAQ Accordion Card | Frontend Mentor | Rey Garcia",
+  meta: [
+    {
+      name: "description",
+      content: "FAQ Accordion Card",
+    },
+    {
+      name: "keywords",
+      content: "FAQ Accordion Card",
+    },
+    {
+      name: "author",
+      content: "Rey Garcia",
+    },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    }
+  ],
+})
+</script>
+
 <template>
   <div class="Main">
     <FAQAccordionCard />
