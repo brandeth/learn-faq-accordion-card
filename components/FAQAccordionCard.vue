@@ -35,7 +35,7 @@ const faqs: FAQ[] = [
 
 <template>
   <div class="FAQAccordionCard">
-    <img class="Image-box-desktop" src="illustration-box-desktop.svg" alt="Box" />
+    <img class="Image-box-desktop" src="/illustration-box-desktop.svg" alt="Box" />
     <div class="FAQAccordionCard-container">
       <FAQAccordionImage />
       <FAQAccordionContent :faqs="faqs" />
