@@ -134,7 +134,7 @@ h6 {
         }
 
         a:hover {
-            color: var(--very-dark-desaturated-blue);
+            color: var(--soft-red);
         }
     }
 }
@@ -288,28 +288,12 @@ h6 {
     }
 }
 
-@media screen and (min-width: 992px) {
-    .FAQAccordionCard {
-        .Image {
-            &-box {
-                &-desktop {
-                    display: block;
-                    position: absolute;
-                    top: 56%;
-                    left: -3%;
-                    z-index: 2;
-                    width: 12rem;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 889px) {
     .Main {
         grid-template-columns: 1fr;
         place-items: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
     .FAQAccordionCard {
@@ -317,6 +301,19 @@ h6 {
         max-width: 60rem;
         width: 100%;
         position: relative;
+
+        .Image {
+            &-box {
+                &-desktop {
+                    display: block;
+                    position: absolute;
+                    top: 56%;
+                    z-index: 2;
+                    width: 12rem;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
 
         &-container {
             display: grid;
